@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 重置文件 -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style01.css">
+  <title>健康信息登记</title>
+</head>
+<body>
+  <div class="reg_div">
+	<p>登记</p>
+	<form action="push.php" method="post">
+    <ul class="reg_ul">
+      <li>
+          <span>体温：</span>
+          <input type="text" name="temper" value="" placeholder="36.3°C-37.2°C为正常" class="reg_user">
+          <span class="tip user_hint"></span>
+      </li>
+      <li>
+          <span>身体状况：</span>
+          <input type="text" name="health" value="" placeholder="正常或写得病情况" class="reg_password">
+          <span class="tip password_hint"></span>
+      </li>
+      <li>
+          <span>异常状况：</span>
+          <input type="text" name="condition" value="" placeholder="无或为确诊或为疑似病例" class="reg_confirm">
+          <span class="tip confirm_hint"></span>
+      </li>
+      <li>
+          <span>隔离状态</span>
+          <input type="text" name="state" value="" placeholder="正常或强制隔离" class="reg_email">
+          <span class="tip email_hint"></span>
+      </li>
+      <li>
+          <span>隔离地点</span>
+          <input type="text" name="place" value="" placeholder="无或写明地点" class="reg_mobile">
+          <span class="tip mobile_hint"></span>
+	  </li>
+	  <li></li>
+		是否接触过新冠肺炎疑似或确诊人员？<br /><br /> 
+		<label><input name="check" type="radio" value="是" />是 </label> 
+		<label><input name="check" type="radio" value="否" />否 </label> 
+		<li></li>
+		<li></li>
+		<li></li>
+		<div>
+        <input type="submit" value="提交"/>
+        
+	  </div>
+	</form>
+	<li><a href="./index.php">退出</a></li>
+    </ul>
+  </div>
+  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <div style="text-align:center;">
+</div>
+</body>
+</html>

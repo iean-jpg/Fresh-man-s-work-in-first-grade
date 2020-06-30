@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Poppins',sans-serif;
+}
+
+.quote{
+    width:1200px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.quote .box{
+    position: absolute;
+    width:300px;
+    grid-row-end:400px;
+    top: 10%;
+    left: 40%;
+    background:#fff ;
+    overflow: hidden;
+    transition: .5s;
+    z-index:2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgb(0,0,0,.2);
+}
+
+.quote .box:hover{
+    box-shadow: -20px 50px 100px rgb(0,0,0,.5);
+}
+
+.quote .bg{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    opacity:0;
+    transition: 0.5s;
+    pointer-events: none;
+    width:100%;
+    height:100%;
+}
+
+.quote .box.box1:hover ~ .bg,
+.quote .box.box1:hover
+{
+    opacity:0;
+    background: linear-gradient(#1a94cc,#c01414);
+}
